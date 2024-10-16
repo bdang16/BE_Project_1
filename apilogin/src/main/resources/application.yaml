@@ -1,9 +1,21 @@
-#spring.application.name=apilogin
-#server.port=1424
+
 
 security:
     jwt:
       secret-key: verysecretkeyohmygodwhyisitsosecretdonttellanybody
 
 server:
-  port: 1424
+  port: 2214
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/DB_PROJECT1_V1
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
